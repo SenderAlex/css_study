@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+/*настраивают элемент, чтобы он использовал гибкую (flex) компоновку*/
+.container {
+    display: flex;  /*позволяет flex-элементам располагаться в одном ряду или в нескольких рядах*/
+    justify-content: space-around;  /*пространство между элементами и краями контейнера делится поровну*/
+    flex-wrap: wrap;  /*Значение wrap позволяет элементам переноситься на новую строку, если они не помещаются в одну линию.*/
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*создает тень вокруг элемента*/
+    width: 350px;
+    margin: 20px;
+    transition: transform 0.2s, box-shadow 0.2s; /*используется для создания плавных изменений*/
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.1); /* увеличение карточки по наведению */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* увеличение тени */
+}
+
+.profile {
+    border-radius: 10%;
+    width: 230px;
+    height: 230px;
+    margin-top: 20px; /*задает внешний отступ (margin) сверху элемента*/
+    object-fit: cover; /* обрезка изображения */
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.name {
+    font-size: 16px;
+    font-family: Verdana;
+}
+
+.email {
+    font-size: 12px;
+    font-family: Verdana;
+    color: #ff0088;
+}
+
+.email:hover {
+    font-size: 15px;
+    font-family: Verdana;
+    color: #0033ff;
+}
